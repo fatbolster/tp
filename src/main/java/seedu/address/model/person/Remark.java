@@ -1,14 +1,19 @@
 package seedu.address.model.person;
 
-import static seedu.address.commons.util.AppUtil.checkArgument;
-
 import static java.util.Objects.requireNonNull;
 
-public class Remark {
 
+/**
+ * Represents a remark attached to a Person.
+ */
+public class Remark {
 
     public final String value;
 
+    /**
+     * creates a remark with a string representation
+     * @param remark
+     */
     public Remark(String remark) {
         requireNonNull(remark);
         value = remark;
